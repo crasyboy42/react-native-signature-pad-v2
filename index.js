@@ -125,7 +125,7 @@ export default class SignaturePad extends Component {
         onMessage={this.onMessage}
         renderError={this._renderError}
         renderLoading={this._renderLoading}
-        source={this.state.source}
+        source={this.state.source || {html: ''}}
         javaScriptEnabled={true}
         style={this.props.style}
       />
